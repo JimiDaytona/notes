@@ -1,0 +1,85 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+.side_bar {
+
+}
+
+body {
+    background-color: rgba(60, 148, 153, 0.8);
+    font: 700 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.notes {
+    border: 5px solid rgba(0, 0, 0, 0.8);
+    margin: 5px;
+    padding: 10px;
+ }
+
+.notes h4 {
+    font-size: x-large;
+}
+
+.notes a {
+    color: rgba(163, 186, 236, 0.8);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main_cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(19, 85, 99, 0.8);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.form input {
+    border: 2px solid;
+    outline: none;
+    background-color: rgba(37, 192, 200, 0.8);
+    margin: 5px;
+}
+
+.form .button {
+    font-weight: bold;
+}
+
+textarea.note_text {
+    resize: none;
+    vertical-align: top;
+    width: 400px;
+    height: min(200px);
+    background-color: rgba(37, 192, 200, 0.8);
+    border: 2px solid;
+    margin: 0px 5px 0px 5px;
+}
+
+footer {
+    background-color: #1a202c;  /* Тёмный фон */
+    color: white;               /* Белый текст для контраста */
+    padding: 5px;              /* Отступы вокруг содержимого */
+    text-align: center;         /* Выравнивание текста по центру */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Тень для небольшого объема */
+}
+header {
+    background-color: #1a202c;  /* Тёмный фон */
+    color: white;               /* Белый текст для контраста */
+    padding: 5px;              /* Отступы вокруг содержимого */
+    text-align: center;         /* Выравнивание текста по центру */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Тень для небольшого объема */
+}
+
+header h1 {
+    font-size: x-large;
+}

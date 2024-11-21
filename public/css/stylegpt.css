@@ -1,0 +1,128 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Контейнер */
+.main_cont {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Боковая панель */
+.side_bar {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+/* Заметки */
+.notes {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: #fafafa;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.notes:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.notes h4 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #007BFF;
+}
+
+.notes p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.notes a {
+    text-decoration: none;
+    color: #ff4d4d;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.notes a:hover {
+    color: #cc0000;
+}
+
+/* Форма */
+.form {
+    flex: 2;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title_text,
+.note_text,
+.button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.title_text:focus,
+.note_text:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.note_text {
+    resize: vertical;
+    height: 100px;
+}
+
+.button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .main_cont {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .side_bar,
+    .form {
+        max-width: 100%;
+    }
+}
